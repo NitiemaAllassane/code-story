@@ -14,12 +14,12 @@ html {
 
 
 body {
-    background-color: #090228;
-    color: #fff;
+    background-color: #fff;
+    color: #000;
 }
 
 .container {
-    max-width: 1080px;
+    max-width: 950px;
     margin: 0 auto;
 }
 
@@ -77,16 +77,17 @@ ul {
 
 code {
     padding: 20px;
-    background-color: #f9f9f9;
+    background-color: #08011d;
     border-radius: 5px;
-    color: #000;
+    color: #f9ff99;
+    display: block;
 }
 
 
 .actionLink {
     display: block;
     font-size: 1em;
-    color: #fff;
+    color: #000;
 }
 
 .actionLink i {
@@ -110,10 +111,6 @@ code {
     bottom: 0;
     left: 0;
     z-index: -1;
-}
-
-.home h3 {
-    text-align: left;
 }
 
 .home p {
@@ -152,14 +149,20 @@ code {
 }
 
 
-.begin {
+.begin, .lightCode, .chap3{
     padding-top: 10%;
 }
 
 
 
+
+
 .conclusion {
     background-color: #0099ff;
+    color: #fff;
+}
+.conclusion a {
+    color: #fff;
 }
 
 .conclusion .actionLink {
@@ -191,3 +194,75 @@ footer {
     bottom: 0;
     left: 0;
 } */
+
+
+
+/* Resonsive mode */
+
+@media screen and (max-width: 1080px) {
+    .container {
+        max-width: 90%;
+    }
+
+    .home .moonImgbox  {
+        width: 200px;
+        height: 200px;
+        bottom: 0;
+        z-index: -1;
+    }
+}
+
+@media screen and (max-width: 48rem) {
+    .home .moonImgbox  {
+        width: 150px;
+        height: 150px;
+    }
+
+    .intro .ordiImgbox {
+        width: 150px;
+        height: 150px;
+        z-index: -1;
+    }
+}
+
+
+@media screen and (max-width: 40rem) {
+    h1 {
+        font-size: 2.5em;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    
+}
+
+
+
+@media screen and (max-width: 445px) {
+    .home .moonImgbox  {
+        right: 5%;
+    }
+
+    .home h1 {
+        margin-bottom: 1rem;
+    }
+
+    section:not(.home) {
+        padding-bottom: 5em;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 1.1em;
+    }
+
+}
